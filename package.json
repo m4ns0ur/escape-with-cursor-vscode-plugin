@@ -2,7 +2,7 @@
   "name": "escape-with-cursor",
   "displayName": "Escape with Cursor",
   "description": "Keeps the cursor position after selecting all text and pressing Escape.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "m4ns0ur",
   "engines": {
     "vscode": "^1.94.0"
@@ -10,6 +10,7 @@
   "categories": [
     "Other"
   ],
+  "icon": "images/icon.png",
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {

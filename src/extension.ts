@@ -10,6 +10,7 @@ export function activate(context: vscode.ExtensionContext) {
         if (editor) {
             const selection = editor.selection;
 
+            // Save the cursor position when there's no selection
             if (selection.isEmpty) {
                 previousCursorPosition = selection.start;
             }
@@ -31,6 +32,7 @@ export function activate(context: vscode.ExtensionContext) {
         }
     });
 
+    // Push the command to the context subscriptions
     context.subscriptions.push(disposable);
 }
 
